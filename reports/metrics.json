@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dataset": "UCI/sklearn handwritten digits (8\u00d78 greyscale)",
+    "train": 1257,
+    "validation": 180,
+    "test": 360
+  },
+  "cnn": {
+    "parameters": 13706,
+    "best_epoch": 38,
+    "epochs_run": 44
+  },
+  "results": {
+    "Logistic regression (pixels)": {
+      "accuracy": 0.9667,
+      "macro_f1": 0.9665,
+      "log_loss": 0.1844,
+      "ece": 0.0722,
+      "acc_shifted 1px": 0.4306,
+      "acc_gaussian noise \u03c3=0.2": 0.9306
+    },
+    "MLP (1 hidden layer, sklearn)": {
+      "accuracy": 0.9778,
+      "macro_f1": 0.9779,
+      "log_loss": 0.1347,
+      "ece": 0.014,
+      "acc_shifted 1px": 0.4778,
+      "acc_gaussian noise \u03c3=0.2": 0.9306
+    },
+    "NumPy CNN (no augmentation)": {
+      "accuracy": 0.9639,
+      "macro_f1": 0.9639,
+      "log_loss": 0.0843,
+      "ece": 0.016,
+      "acc_shifted 1px": 0.6472,
+      "acc_gaussian noise \u03c3=0.2": 0.925
+    },
+    "NumPy CNN + augmentation": {
+      "accuracy": 0.9778,
+      "macro_f1": 0.9778,
+      "log_loss": 0.0511,
+      "ece": 0.0193,
+      "acc_shifted 1px": 0.9528,
+      "acc_gaussian noise \u03c3=0.2": 0.8889
+    }
+  }
+}

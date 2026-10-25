@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+
+.pytest_cache/
+.DS_Store
+data/*.db
+
+data/raw/
+data/processed/
+data/quarantine/
+data/eurosat/
+data/images/
+# ResNet weights are ~45 MB: attach them to a GitHub Release instead of committing
+models/*.pt
